@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Ensure mouse pointer (hand cursor) is always visible on all clickable controls */
+button,
+[role="button"],
+a,
+input[type="range"],
+input[type="checkbox"],
+input[type="radio"],
+select,
+label,
+summary,
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+button:disabled,
+[role="button"]:disabled,
+input:disabled {
+  cursor: not-allowed !important;
+}
+
+canvas {
+  cursor: default;
+}
+
+canvas.cursor-crosshair {
+  cursor: crosshair !important;
+}
+
+canvas.cursor-grab {
+  cursor: grab !important;
+}
+
+canvas.cursor-grabbing {
+  cursor: grabbing !important;
+}
+
+canvas.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom glow and sci-fi aesthetic utilities */
+.glass-panel {
+  background: rgba(10, 16, 32, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.glass-panel-glow {
+  background: rgba(10, 18, 38, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  box-shadow: 0 0 25px -5px rgba(14, 165, 233, 0.12);
+}
+
+.glass-panel-subtle {
+  background: rgba(7, 11, 24, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060913;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}

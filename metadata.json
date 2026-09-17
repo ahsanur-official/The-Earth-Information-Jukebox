@@ -2,5 +2,7 @@
   "name": "The Earth Information Jukebox",
   "description": "Translating Earth Science, Visual Feeds, and Videos into Real-Time Multi-Sensory Soundscapes.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
